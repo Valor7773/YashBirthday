@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Yash!</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FF5757',secondary:'#FFC107'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@keyframes float {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-20px); }
+}
+@keyframes pulse {
+0%, 100% { transform: scale(1); }
+50% { transform: scale(1.05); }
+}
+@keyframes rotate {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+@keyframes typewriter {
+from { width: 0; }
+to { width: 100%; }
+}
+@keyframes blink {
+50% { border-color: transparent; }
+}
+@keyframes float-balloon {
+0% { transform: translateY(0) rotate(0deg); }
+25% { transform: translateY(-15px) rotate(5deg); }
+50% { transform: translateY(0) rotate(0deg); }
+75% { transform: translateY(-10px) rotate(-5deg); }
+100% { transform: translateY(0) rotate(0deg); }
+}
+@keyframes twinkle {
+0%, 100% { opacity: 0.2; }
+50% { opacity: 1; }
+}
+@keyframes firework {
+0% { transform: scale(0); opacity: 1; }
+100% { transform: scale(1); opacity: 0; }
+}
+@keyframes confetti-fall {
+0% { transform: translateY(-100px) rotate(0deg); }
+100% { transform: translateY(calc(100vh + 100px)) rotate(360deg); }
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+40% { transform: translateY(-30px); }
+60% { transform: translateY(-15px); }
+}
+@keyframes glow {
+0%, 100% { box-shadow: 0 0 10px 5px rgba(255, 87, 87, 0.7); }
+50% { box-shadow: 0 0 20px 10px rgba(255, 87, 87, 0.9); }
+}
+@keyframes flip {
+0% { transform: rotateX(0); }
+50% { transform: rotateX(90deg); }
+100% { transform: rotateX(0); }
+}
+@keyframes float-quote {
+0% { transform: translateY(20px); opacity: 0; }
+10% { transform: translateY(0); opacity: 1; }
+90% { transform: translateY(0); opacity: 1; }
+100% { transform: translateY(-20px); opacity: 0; }
+}
+@keyframes gradient-sky {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+@keyframes candle-light {
+0%, 100% { box-shadow: 0 0 8px 4px rgba(255, 191, 0, 0.8); }
+50% { box-shadow: 0 0 12px 6px rgba(255, 191, 0, 0.6); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.sky-background {
+background: linear-gradient(135deg, #87CEEB, #6A5ACD, #191970, #000033);
+background-size: 400% 400%;
+animation: gradient-sky 30s ease infinite;
+}
+.rainbow-text {
+background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: pulse 2s infinite ease-in-out;
+text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.balloon {
+animation: float-balloon 6s infinite ease-in-out;
+}
+.star {
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+animation: twinkle 3s infinite ease-in-out;
+}
+.firework {
+background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+animation: firework 2s ease-out forwards;
+}
+.confetti {
+animation: confetti-fall 10s linear infinite;
+}
+.bounce-animation {
+animation: bounce 1s ease;
+}
+.typewriter {
+overflow: hidden;
+white-space: nowrap;
+border-right: 3px solid #FF5757;
+width: 0;
+animation: typewriter 5s steps(80) 1s forwards, blink 0.7s infinite;
+}
+.glow-button {
+animation: glow 2s infinite ease-in-out;
+}
+.flip-clock {
+perspective: 600px;
+}
+.flip-unit {
+animation: flip 1s ease-in-out;
+}
+.quote-card {
+animation: float-quote 20s linear infinite;
+}
+.rotating-glow {
+animation: rotate 10s linear infinite;
+}
+.photo-frame {
+position: relative;
+overflow: hidden;
+transform: rotate(-2deg);
+transition: transform 0.3s ease;
+}
+.photo-frame:hover {
+transform: rotate(0deg) scale(1.05);
+}
+.photo-frame::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+border: 1px solid rgba(255, 255, 255, 0.5);
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.candle {
+position: relative;
+}
+.candle::after {
+content: "";
+position: absolute;
+top: -10px;
+left: 50%;
+transform: translateX(-50%);
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: #FFC107;
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+.candle.lit::after {
+opacity: 1;
+animation: candle-light 1s infinite ease-in-out;
+}
+.modal {
+backdrop-filter: blur(5px);
+}
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.hide-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+/* Music player toggle styles */
+.music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 40;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.music-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.music-toggle i {
+  color: white;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.music-toggle.playing {
+  background-color: rgba(255, 87, 87, 0.3);
+}
+
+/* Music text prompt */
+.music-prompt {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 8px 16px;
+  border-radius: 20px;
+  z-index: 30;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 1s ease forwards, pulse 3s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.music-prompt::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: -40px;
+  top: 50%;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: lineGrow 1.5s 1s ease forwards;
+}
+
+@keyframes lineGrow {
+  to { transform: scaleX(1); }
+}
+
+/* Modify music info and volume control to not show on hover */
+.music-info {
+  position: fixed;
+  bottom: 76px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: none; /* Hide completely */
+}
+
+.volume-control {
+  position: fixed;
+  bottom: 76px;
+  right: 76px;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  transform: translateX(20px);
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: none; /* Hide completely */
+}
+
+/* No hover effects to show these elements */
+.music-toggle:hover + .music-info {
+  display: none;
+}
+
+.music-toggle.playing:hover ~ .volume-control {
+  display: none;
+}
+
+.volume-control:hover {
+  display: none;
+}
+
+/* Intro sequence styles */
+.intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+.intro-question {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  max-width: 90%;
+}
+
+.intro-options {
+  display: flex;
+  gap: 2rem;
+}
+
+.intro-button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border: none;
+  transform: scale(1);
+}
+
+.yes-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.no-button {
+  background-color: #FF5757;
+  color: white;
+}
+
+.intro-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.intro-button.unclickable {
+  animation: avoid-click 0.8s infinite;
+  cursor: not-allowed;
+}
+
+.intro-button:disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Fast transition for NO button movement */
+.no-button {
+  transition: all 0.1s ease;
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes avoid-click {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(-10px, 8px) scale(1.02); }
+  50% { transform: translate(10px, -5px) scale(0.98); }
+  75% { transform: translate(-5px, -10px) scale(1.01); }
+}
+
+.video-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  width: 80%;
+  max-width: 640px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  display: none;
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+}
+
+.finalText {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9990;
+  pointer-events: none;
+  /* Ensure text is centered and visible */
+  display: none;
+  margin: 0 auto;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+@keyframes revealText {
+  0% { transform: translateY(-50%) scale(0.5); opacity: 0; }
+  100% { transform: translateY(-50%) scale(1); opacity: 1; }
+}
+
+/* Hide main content initially */
+.main-container {
+  opacity: 0;
+  transition: opacity 1s ease, filter 2s ease;
+  filter: blur(20px);
+}
+
+/* Animation for final text reveal */
+@keyframes revealText {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fix for typewriter text visibility */
+.message-container {
+  max-width: 100%;
+  width: 100%;
+  overflow: visible;
+  padding: 2rem;
+}
+
+.typewriter-text {
+  display: inline-block;
+  white-space: normal;
+  width: 100% !important;
+  animation: none !important;
+}
+
+.main-message {
+  white-space: normal !important;
+  width: 100% !important;
+  animation: fadeInText 2s ease forwards !important;
+  line-height: 1.8;
+  overflow: visible !important;
+  text-overflow: initial !important;
+}
+
+.message-line {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Wish form styles */
+.wish-form {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.wish-form.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wish-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.wish-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wish-input:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  border-color: white;
+}
+
+.wish-button {
+  background: rgba(255, 87, 87, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+}
+
+.wish-button:hover {
+  background: rgba(255, 87, 87, 1);
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 87, 87, 0.5);
+}
+
+.wish-confirmation {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wish-confirmation.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.wish-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.wish-star {
+  position: absolute;
+  background: white;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: shootingStar 1s linear forwards;
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0) scale(0.3);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(-10px) translateY(10px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px) translateY(100px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.wish-angel {
+  font-size: 40px;
+  display: inline-block;
+  animation: floatAngel 2s infinite ease-in-out;
+  margin: 0 10px;
+}
+
+@keyframes floatAngel {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.wish-cross {
+  font-size: 40px;
+  display: inline-block;
+  animation: floatCross 2s infinite ease-in-out;
+  margin: 0 10px;
+}
+
+@keyframes floatCross {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.wish-text {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Sparkle animation */
+.sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  pointer-events: none;
+  transform-origin: center;
+  opacity: 0;
+}
+
+@keyframes sparkle {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+.sorry-text {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10000;
+  margin: 0 auto;
+  text-shadow: 0 0 20px rgba(255, 87, 87, 0.9);
+  letter-spacing: 2px;
+  display: none;
+  background-color: transparent;
+  padding: 20px;
+  width: auto;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.sorry-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.sorry-title {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 10000;
+  text-shadow: 0 0 15px rgba(255, 87, 87, 0.8);
+  letter-spacing: 2px;
+  pointer-events: none;
+}
+
+.picture-text {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10000;
+  margin: 0 auto;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 20px;
+  width: auto;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.word-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  width: auto;
+  max-width: 90%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.animating-word {
+  display: inline-block;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.4s ease;
+}
+
+@keyframes wordAnimation {
+  0% { transform: scale(0.5); opacity: 0; }
+  20% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.typewriter-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  width: auto;
+  max-width: 90%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  border-right: 4px solid white;
+  width: 0;
+  animation: typewriter 3s steps(40) forwards, blink 0.7s step-end infinite alternate;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes sorryAnimation {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+  10% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+  90% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+}
+
+/* Toast notification styles */
+.toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  max-width: 350px;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateX(120%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.toast-notification.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.toast-notification.hide {
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.toast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.toast-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+.toast-time {
+  font-size: 12px;
+  color: #777;
+}
+
+.toast-body {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.toast-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #FF5757;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.toast-icon i {
+  color: white;
+  font-size: 18px;
+}
+
+.toast-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.toast-message {
+  flex: 1;
+}
+
+/* Parent mode toggle styles */
+.parent-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 14px;
+}
+
+.parent-mode-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+}
+
+.parent-mode-toggle.active .toggle-switch {
+  background-color: #4CAF50;
+}
+
+.parent-mode-toggle.active .toggle-switch::after {
+  transform: translateX(20px);
+}
+
+.parent-mode-info {
+  position: fixed;
+  bottom: 76px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 10000;
+}
+
+.parent-mode-toggle:hover + .parent-mode-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Photo carousel animation */
+.photo-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  object-fit: cover;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+@keyframes fadeInOut {
+  0%, 20% { opacity: 0; }
+  25%, 45% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.photo-carousel .carousel-item:nth-child(1) {
+  animation: fadeInOut 20s 0s infinite;
+}
+
+.photo-carousel .carousel-item:nth-child(2) {
+  animation: fadeInOut 20s 5s infinite;
+}
+
+.photo-carousel .carousel-item:nth-child(3) {
+  animation: fadeInOut 20s 10s infinite;
+}
+
+.photo-carousel .carousel-item:nth-child(4) {
+  animation: fadeInOut 20s 15s infinite;
+}
+</style>
+</head>
+<body class="sky-background min-h-screen overflow-x-hidden">
+<!-- Intro Sequence -->
+<div id="intro-overlay" class="intro-overlay">
+  <h1 id="intro-question" class="intro-question">DO YOU LIKE ISHOWMEAT?</h1>
+  <div class="intro-options">
+    <button id="yes-button" class="intro-button yes-button" disabled>YES</button>
+    <button id="no-button" class="intro-button no-button">NO</button>
+  </div>
+</div>
+
+<!-- Parent Mode Toggle -->
+<div id="parent-mode-toggle" class="parent-mode-toggle">
+  <span>Parent Mode</span>
+  <div class="toggle-switch"></div>
+</div>
+<div class="parent-mode-info">Skip trolling sequence and show birthday page directly</div>
+
+<!-- Sorry Text Container -->
+<div id="sorry-container" class="sorry-container" style="display: none;">
+  <div id="sorry-text" class="sorry-text">SORRY!</div>
+</div>
+
+<!-- Sorry Title -->
+<div id="sorry-title" class="sorry-title">SORRY!</div>
+
+<!-- Picture Text Container -->
+<div id="typewriter-container" class="typewriter-container">
+  <div id="typewriter-text" class="typewriter-text">Abhi to picture baaki hai mere dost</div>
+</div>
+
+<!-- Word Animation Container -->
+<div id="word-container" class="word-container">
+  <span class="animating-word">Picture</span>
+  <span class="animating-word">to</span>
+  <span class="animating-word">abhi</span>
+  <span class="animating-word">baaki</span>
+  <span class="animating-word">hai</span>
+  <span class="animating-word">mere</span>
+  <span class="animating-word">dost</span>
+</div>
+
+<!-- Video Container -->
+<div id="video-container" class="video-container">
+  <video id="current-video" src="" muted></video>
+</div>
+
+<!-- Final Text -->
+<div id="final-text" class="finalText" style="width: 100%;">JUST KIDDING YASHU!! :)</div>
+
+<!-- Floating Elements -->
+<div id="floating-elements" class="fixed inset-0 pointer-events-none overflow-hidden"></div>
+
+<!-- Music Player -->
+<div id="music-toggle" class="music-toggle">
+  <i class="ri-music-2-line"></i>
+</div>
+<div class="music-info">Toggle music</div>
+<div class="volume-control">
+  <input type="range" min="0" max="100" value="50" class="volume-slider" id="volume-slider">
+</div>
+<audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<!-- Music Prompt -->
+<div class="music-prompt">Enable music for the best experience!</div>
+
+<!-- Main Content -->
+<div id="main-container" class="container mx-auto px-4 py-8 relative min-h-screen flex flex-col items-center justify-center main-container">
+<!-- Header -->
+<h1 class="rainbow-text text-5xl md:text-7xl font-['Dancing_Script'] mb-8 text-center bounce-animation">
+Happy Birthday Yash 🎉
+</h1>
+<!-- Profile Section -->
+<div class="relative mb-12">
+<div class="rotating-glow absolute inset-0 rounded-full bg-gradient-to-r from-primary via-yellow-400 to-blue-500 opacity-70"></div>
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white relative z-10">
+  <!-- Photo Carousel with Yash's photos -->
+  <div class="photo-carousel">
+    <img src="yash.png" alt="Yash's Photo" class="carousel-item">
+    <img src="yash-2.jpg" alt="Yash's Photo 2" class="carousel-item">
+    <img src="yash-3.jpg" alt="Yash's Photo 3" class="carousel-item">
+    <img src="yash-4.jpg" alt="Yash's Photo 4" class="carousel-item">
+  </div>
+</div>
+</div>
+<!-- Message Section -->
+<div class="max-w-2xl mx-auto mb-12 bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-lg message-container">
+  <div class="main-message text-white text-lg md:text-xl font-['Montserrat'] text-center">
+    <span class="message-line">From childhood mischief to countless memories,</span>
+    <span class="message-line">you've always been a blessing.</span>
+    <span class="message-line">Happy birthday, Yash.</span>
+    <span class="message-line">Today's your day, and the world shines a bit brighter just for you.</span>
+  </div>
+  <p class="text-white text-lg md:text-xl font-['Dancing_Script'] text-center mt-6 opacity-0" style="animation: fadeIn 1s ease 3s forwards;">
+    With love from Virag & Aryasatya
+  </p>
+</div>
+<!-- Surprise Button -->
+<button id="surprise-btn" class="glow-button bg-primary hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-button text-lg md:text-xl mb-16 transform hover:scale-105 transition-all duration-300 whitespace-nowrap">
+Click to Reveal Surprise
+</button>
+<!-- Countdown Timer -->
+<div class="mb-16">
+<h2 class="text-3xl md:text-4xl font-['Dancing_Script'] text-white text-center mb-6">Countdown to Next Birthday</h2>
+<div class="flex gap-4 justify-center">
+<!-- Days -->
+<div class="flip-clock bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg text-center">
+<div id="days" class="flip-unit text-4xl md:text-5xl font-bold text-white">365</div>
+<div class="text-sm text-white mt-2">Days</div>
+</div>
+<!-- Hours -->
+<div class="flip-clock bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg text-center">
+<div id="hours" class="flip-unit text-4xl md:text-5xl font-bold text-white">24</div>
+<div class="text-sm text-white mt-2">Hours</div>
+</div>
+<!-- Minutes -->
+<div class="flip-clock bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg text-center">
+<div id="minutes" class="flip-unit text-4xl md:text-5xl font-bold text-white">60</div>
+<div class="text-sm text-white mt-2">Minutes</div>
+</div>
+<!-- Seconds -->
+<div class="flip-clock bg-white bg-opacity-20 backdrop-blur-md p-4 rounded-lg text-center">
+<div id="seconds" class="flip-unit text-4xl md:text-5xl font-bold text-white">60</div>
+<div class="text-sm text-white mt-2">Seconds</div>
+</div>
+</div>
+</div>
+<!-- Notification Cards -->
+<div id="quote-container" class="w-full max-w-xl mx-auto space-y-4 mb-16">
+<!-- Notification cards will be added dynamically -->
+</div>
+</div>
+<!-- Surprise Modal -->
+<div id="surprise-modal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+<div class="modal absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="relative bg-white bg-opacity-20 backdrop-blur-xl p-8 rounded-xl max-w-md w-full">
+<button id="close-modal" class="absolute top-4 right-4 text-white hover:text-gray-300">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line ri-lg"></i>
+</div>
+</button>
+<div class="flex flex-col items-center">
+<!-- Birthday Cake -->
+<div class="mb-6 relative">
+<div class="w-48 h-64 bg-primary rounded-lg flex flex-col justify-end items-center">
+<!-- Cake layers -->
+<div class="w-full h-12 bg-pink-300 rounded-t-lg"></div>
+<div class="w-full h-20 bg-pink-400"></div>
+<div class="w-full h-24 bg-pink-500 rounded-b-lg"></div>
+<!-- Candles -->
+<div class="absolute top-6 flex justify-center w-full">
+<div id="candle-1" class="candle mx-2 w-2 h-16 bg-yellow-200"></div>
+<div id="candle-2" class="candle mx-2 w-2 h-16 bg-yellow-200"></div>
+<div id="candle-3" class="candle mx-2 w-2 h-16 bg-yellow-200"></div>
+<div id="candle-4" class="candle mx-2 w-2 h-16 bg-yellow-200"></div>
+<div id="candle-5" class="candle mx-2 w-2 h-16 bg-yellow-200"></div>
+</div>
+</div>
+</div>
+<h3 id="wish-text" class="text-3xl font-['Dancing_Script'] text-white text-center mb-6 opacity-0 transition-opacity duration-1000">
+Make a Wish 🕯️
+</h3>
+
+<!-- Wish Form -->
+<div id="wish-form" class="wish-form">
+  <input type="text" id="wish-input" class="wish-input" placeholder="Enter your birthday wish...">
+  <button id="wish-submit" class="wish-button">Make Wish ✨</button>
+</div>
+
+<!-- Wish Confirmation -->
+<div id="wish-confirmation" class="wish-confirmation">
+  <div class="wish-text text-white text-xl">Your wish has been heard!</div>
+  <div>
+    <span class="wish-cross">✝️</span>
+    <span class="wish-cross" style="animation-delay: 0.5s;">🙏</span>
+    <span class="wish-cross" style="animation-delay: 1s;">✝️</span>
+  </div>
+  <p class="text-white mt-3">Through faith, your wish is blessed. God will answer it in His perfect time.</p>
+  <div class="wish-stars"></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Toast Notification Container -->
+<div id="toast-container"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Intro sequence
+const introOverlay = document.getElementById('intro-overlay');
+const introQuestion = document.getElementById('intro-question');
+const yesButton = document.getElementById('yes-button');
+const noButton = document.getElementById('no-button');
+const videoContainer = document.getElementById('video-container');
+const currentVideo = document.getElementById('current-video');
+const sorryText = document.getElementById('sorry-text');
+const sorryContainer = document.getElementById('sorry-container');
+const finalText = document.getElementById('final-text');
+const mainContainer = document.getElementById('main-container');
+const sorryTitle = document.getElementById('sorry-title');
+const typewriterContainer = document.getElementById('typewriter-container');
+const typewriterText = document.getElementById('typewriter-text');
+const wordContainer = document.getElementById('word-container');
+const parentModeToggle = document.getElementById('parent-mode-toggle');
+const musicPrompt = document.querySelector('.music-prompt');
+
+// Parent Mode Toggle functionality
+parentModeToggle.addEventListener('click', function() {
+  this.classList.add('active');
+  
+  // Disable the toggle to prevent multiple clicks
+  this.style.pointerEvents = 'none';
+  
+  // Skip to main content directly
+  setTimeout(() => {
+    // Hide intro overlay and parent mode toggle
+    introOverlay.style.opacity = '0';
+    this.style.opacity = '0';
+    
+    // Show main content directly
+    mainContainer.style.opacity = '1';
+    mainContainer.style.filter = 'blur(0)';
+    
+    // Hide parent mode toggle completely
+    setTimeout(() => {
+      introOverlay.style.display = 'none';
+      this.style.display = 'none';
+      
+      // Start showing notifications after a delay
+      setTimeout(() => {
+        showNextNotification();
+      }, 3500); // 3.5 seconds delay after landing on main page
+    }, 1000);
+  }, 500);
+});
+
+// Counter for NO button hover attempts
+let hoverCount = 0;
+let isQuestionChanged = false;
+let originalQuestion = "I MEAN DO YOU LIKE ISHOWSPEED?";
+let alternateQuestion = "I MEAN DO YOU LIKE ISHOWMEAT?";
+
+// Add debug logging
+function logDebug(message) {
+  console.log(`DEBUG: ${message}`);
+}
+
+// Start with main content hidden
+mainContainer.style.opacity = '0';
+
+// Make the NO button run away when hovered
+noButton.addEventListener('mouseover', moveNoButton);
+
+// Move the NO button to a random position
+function moveNoButton(e) {
+  e.preventDefault(); // Prevent any default click behavior
+  
+  // Increment hover count
+  hoverCount++;
+  
+  // Calculate random position within visible area
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+  
+  // Keep button within viewport bounds with some margin
+  const buttonWidth = noButton.offsetWidth;
+  const buttonHeight = noButton.offsetHeight;
+  const maxX = viewportWidth - buttonWidth - 20;
+  const maxY = viewportHeight - buttonHeight - 20;
+  
+  // Generate random position
+  const randomX = Math.floor(Math.random() * maxX) + 10;
+  const randomY = Math.floor(Math.random() * maxY) + 10;
+  
+  // Apply new position
+  noButton.style.position = 'absolute';
+  noButton.style.left = `${randomX}px`;
+  noButton.style.top = `${randomY}px`;
+  
+  // Check if we've reached 10 hover attempts
+  if (hoverCount >= 10) {
+    changeQuestion();
+  }
+  
+  return false; // Prevent default and stop propagation
+}
+
+// Function to change the question and buttons
+function changeQuestion() {
+  // Only run once
+  if (isQuestionChanged) return;
+  isQuestionChanged = true;
+  
+  introQuestion.innerText = originalQuestion;
+  // Change both buttons to YES
+  yesButton.innerText = "YES";
+  noButton.innerText = "YES";
+  // Make both buttons look the same (green)
+  noButton.classList.remove('no-button');
+  noButton.classList.add('yes-button');
+  // Remove movement from NO button
+  noButton.removeEventListener('mouseover', moveNoButton);
+  // Reset NO button position if it was moved
+  noButton.style.position = '';
+  noButton.style.left = '';
+  noButton.style.top = '';
+  
+  // Enable the YES button
+  yesButton.disabled = false;
+  
+  // Add hover effect to both buttons to change question text
+  yesButton.addEventListener('mouseover', toggleQuestionText);
+  yesButton.addEventListener('mouseout', toggleQuestionText);
+  noButton.addEventListener('mouseover', toggleQuestionText);
+  noButton.addEventListener('mouseout', toggleQuestionText);
+  
+  // Add click handlers for both buttons
+  yesButton.addEventListener('click', startVideoSequence);
+  noButton.addEventListener('click', startVideoSequence);
+}
+
+// Toggle between question texts on hover
+function toggleQuestionText(e) {
+  if (e.type === 'mouseover') {
+    introQuestion.innerText = alternateQuestion;
+  } else {
+    introQuestion.innerText = originalQuestion;
+  }
+}
+
+// Start the sequence of videos
+function startVideoSequence() {
+  // Disable buttons to prevent multiple clicks
+  yesButton.disabled = true;
+  noButton.disabled = true;
+  
+  // Hide buttons and question
+  introQuestion.style.opacity = '0';
+  yesButton.style.opacity = '0';
+  noButton.style.opacity = '0';
+  
+  // Start first video (ishowmeat.mp4)
+  playVideoSequence();
+}
+
+// Play the sequence of videos
+function playVideoSequence() {
+  logDebug('Starting video sequence with ishowmeat.mp4');
+  // Step 1: Play ishowmeat.mp4 for 5 seconds
+  videoContainer.style.display = 'block';
+  videoContainer.style.opacity = '1';
+  currentVideo.src = 'ishowmeat.mp4';
+  currentVideo.muted = false;
+  currentVideo.play().catch(e => logDebug('Video play error: ' + e.message));
+  
+  // Step 2: After 5 seconds, stop video and show sorry animation
+  setTimeout(() => {
+    logDebug('ishowmeat.mp4 finished, preparing for sorry animation');
+    currentVideo.pause();
+    videoContainer.style.opacity = '0';
+    
+    setTimeout(() => {
+      videoContainer.style.display = 'none';
+      
+      // Step 3: Show sorry text animation
+      logDebug('Starting sorry animation');
+      showSorryAnimation();
+    }, 500);
+  }, 5000); // Show ishowmeat.mp4 for only 5 seconds
+}
+
+// Show sorry animation
+function showSorryAnimation() {
+  // Make sure sorryContainer exists
+  if (!sorryContainer || !sorryText) {
+    logDebug('ERROR: sorryContainer or sorryText element not found!');
+    // Try to recover by creating elements if needed
+    if (!sorryContainer) {
+      sorryContainer = document.createElement('div');
+      sorryContainer.id = 'sorry-container';
+      sorryContainer.className = 'sorry-container';
+      document.body.appendChild(sorryContainer);
+    }
+    if (!sorryText) {
+      sorryText = document.createElement('div');
+      sorryText.id = 'sorry-text';
+      sorryText.className = 'sorry-text';
+      sorryText.textContent = 'SORRY!';
+      sorryContainer.appendChild(sorryText);
+    }
+  }
+
+  // First sorry
+  logDebug('Showing first SORRY!');
+  sorryContainer.style.display = 'flex';
+  sorryText.style.display = 'block';
+  sorryText.style.opacity = '0';
+  sorryText.style.animation = 'sorryAnimation 1.5s forwards';
+  
+  // Second sorry after 1.5 seconds
+  setTimeout(() => {
+    logDebug('Showing second SORRY!');
+    sorryText.style.animation = 'none';
+    sorryText.style.opacity = '0';
+    void sorryText.offsetWidth; // Trigger reflow
+    sorryText.style.animation = 'sorryAnimation 1.5s forwards';
+  }, 1500);
+  
+  // Third sorry after 3 seconds
+  setTimeout(() => {
+    logDebug('Showing third SORRY!');
+    sorryText.style.animation = 'none';
+    sorryText.style.opacity = '0';
+    void sorryText.offsetWidth; // Trigger reflow
+    sorryText.style.animation = 'sorryAnimation 1.5s forwards';
+    
+    // After the last animation, hide the central text and show it as a title
+    setTimeout(() => {
+      logDebug('Moving SORRY! to title position');
+      sorryText.style.animation = 'none';
+      sorryText.style.opacity = '0';
+      
+      // Now show the title version
+      sorryTitle.style.opacity = '1';
+    }, 1350);
+  }, 3000);
+  
+  // After all 3 sorry animations, play sorry.mp4
+  setTimeout(() => {
+    logDebug('Starting sorry.mp4');
+    // Keep the title visible but play the video
+    videoContainer.style.display = 'block';
+    videoContainer.style.opacity = '1';
+    currentVideo.src = 'sorry.mp4';
+    currentVideo.play().catch(e => logDebug('Video play error: ' + e.message));
+    
+    // After sorry.mp4 ends (3 seconds), hide all sorry elements and start word animation with srk.mp3
+    setTimeout(() => {
+      logDebug('sorry.mp4 ended, hiding sorry elements');
+      
+      // Hide sorry title and elements
+      sorryTitle.style.opacity = '0';
+      sorryText.style.display = 'none';
+      sorryContainer.style.display = 'none';
+      
+      // Hide video container to show the text animation
+      videoContainer.style.opacity = '0';
+      setTimeout(() => {
+        videoContainer.style.display = 'none';
+        
+        // Small delay before starting the word animation
+        setTimeout(() => {
+          logDebug('Starting word animation with srk.mp3');
+          
+          // Create and play audio
+          const srkAudio = new Audio('srk.mp3');
+          srkAudio.volume = 1.0;
+          srkAudio.play().catch(e => logDebug('Audio play error: ' + e.message));
+          
+          // Show word container
+          wordContainer.style.opacity = '1';
+          
+          // Get all words to animate
+          const words = wordContainer.querySelectorAll('.animating-word');
+          const wordCount = words.length;
+          
+          // Calculate time per word to distribute across 4 seconds (audio duration)
+          const timePerWord = 4000 / wordCount;
+          
+          // Animate each word with staggered timing
+          words.forEach((word, index) => {
+            setTimeout(() => {
+              word.style.animation = `wordAnimation 0.6s forwards`;
+              word.style.opacity = '1';
+            }, index * timePerWord);
+          });
+          
+          // After srk.mp3 ends (4 seconds), play IShowSpeed-Barking.mp4
+          setTimeout(() => {
+            logDebug('Word animation complete, starting IShowSpeed-Barking.mp4');
+            
+            // Hide word animation
+            wordContainer.style.opacity = '0';
+            
+            // Small delay before starting final video
+            setTimeout(() => {
+              // Show video container again
+              videoContainer.style.display = 'block';
+              setTimeout(() => {
+                videoContainer.style.opacity = '1';
+                
+                // Play final video
+                currentVideo.src = 'IShowSpeed-Barking.mp4';
+                currentVideo.play().catch(e => logDebug('Video play error: ' + e.message));
+                
+                // After final video plays (13 seconds), continue to birthday page
+                setTimeout(() => {
+                  logDebug('Video sequence complete, transitioning to birthday page');
+                  videoContainer.style.opacity = '0';
+                  setTimeout(() => {
+                    videoContainer.style.display = 'none';
+                    introOverlay.style.opacity = '0.7'; // Keep some overlay for final text
+                    
+                    // Show final text with animation
+                    finalText.style.display = 'block';
+                    finalText.style.zIndex = '9990';
+                    finalText.style.opacity = '1';
+                    finalText.style.textShadow = '0 0 20px rgba(255, 255, 255, 1)';
+                    finalText.style.transform = 'translateY(-50%)';
+                    finalText.style.top = '50%';
+                    finalText.style.left = '0';
+                    finalText.style.right = '0';
+                    finalText.style.margin = '0 auto';
+                    finalText.style.width = '100%';
+                    finalText.style.textAlign = 'center';
+                    finalText.style.animation = 'revealText 1.5s ease forwards';
+                    
+                    // Show main content with blur
+                    mainContainer.style.opacity = '1';
+                    mainContainer.style.filter = 'blur(10px)';
+                    
+                    // Finally reveal everything
+                    setTimeout(() => {
+                      introOverlay.style.opacity = '0';
+                      mainContainer.style.filter = 'blur(0)';
+                      
+                      // Remove overlay completely after animation
+                      setTimeout(() => {
+                        introOverlay.style.display = 'none';
+                        finalText.style.display = 'none';
+                        
+                        // Start showing notifications after main page is revealed with 3-4 second delay
+                        setTimeout(() => {
+                          showNextNotification();
+                        }, 3500); // 3.5 seconds delay after landing on main page
+                      }, 2000); // Extended display time for text
+                    }, 3000); // Extended time for text to be visible
+                  }, 500);
+                }, 13000); // Duration of IShowSpeed-Barking.mp4
+              }, 200); // Short delay for fade in
+            }, 500); // Short delay before showing video container
+          }, 4000); // Duration of srk.mp3
+        }, 300); // Short delay before starting word animation
+      }, 300); // Short delay to ensure video container is hidden
+    }, 3000); // Duration of sorry.mp4
+  }, 4500); // After 3 sorry animations
+}
+
+// Create audio element for notification sound
+const notificationSound = new Audio('notification.mp3');
+notificationSound.volume = 0.7;
+
+// Background music functionality
+const musicToggle = document.getElementById('music-toggle');
+const bgMusic = document.getElementById('bg-music');
+const volumeSlider = document.getElementById('volume-slider');
+
+// Initialize music volume
+bgMusic.volume = 0.5;
+
+// Update volume when slider changes
+volumeSlider.addEventListener('input', function() {
+  bgMusic.volume = this.value / 100;
+});
+
+// Toggle music play/pause
+musicToggle.addEventListener('click', function() {
+  if (bgMusic.paused) {
+    bgMusic.play()
+      .then(() => {
+        musicToggle.classList.add('playing');
+        musicToggle.querySelector('i').classList.remove('ri-music-2-line');
+        musicToggle.querySelector('i').classList.add('ri-volume-up-line');
+        
+        // Hide the music prompt when music is enabled
+        if (musicPrompt) {
+          musicPrompt.style.opacity = '0';
+          setTimeout(() => {
+            musicPrompt.style.display = 'none';
+          }, 500);
+        }
+      })
+      .catch(err => {
+        console.error('Error playing music:', err);
+        // Create a notification about needing to interact with page first
+        const musicErrorNotif = document.createElement('div');
+        musicErrorNotif.className = 'fixed top-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm p-4 rounded-lg shadow-lg z-50 max-w-xs';
+        musicErrorNotif.innerHTML = `
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 flex-shrink-0 bg-yellow-500 rounded-full flex items-center justify-center">
+              <i class="ri-information-line text-white"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="font-semibold text-gray-800">Music Playback</h4>
+              <p class="mt-1 text-gray-600">Click anywhere on the page first, then try the music button again.</p>
+            </div>
+          </div>
+        `;
+        document.body.appendChild(musicErrorNotif);
+        
+        // Remove notification after 5 seconds
+        setTimeout(() => {
+          musicErrorNotif.style.opacity = '0';
+          setTimeout(() => musicErrorNotif.remove(), 5000);
+        }, 5000);
+      });
+  } else {
+    bgMusic.pause();
+    musicToggle.classList.remove('playing');
+    musicToggle.querySelector('i').classList.remove('ri-volume-up-line');
+    musicToggle.querySelector('i').classList.add('ri-music-2-line');
+    
+    // Show the music prompt again when music is disabled
+    if (musicPrompt) {
+      musicPrompt.style.display = 'block';
+      setTimeout(() => {
+        musicPrompt.style.opacity = '1';
+      }, 10);
+    }
+  }
+});
+
+// Create floating elements
+const floatingContainer = document.getElementById('floating-elements');
+// Create balloons
+for (let i = 0; i < 15; i++) {
+createBalloon();
+}
+// Create stars
+for (let i = 0; i < 50; i++) {
+createStar();
+}
+// Create confetti
+for (let i = 0; i < 100; i++) {
+createConfetti();
+}
+// Create decorative icons
+const icons = ['cake', 'gift', 'heart', 'star'];
+for (let i = 0; i < 20; i++) {
+createFloatingIcon(icons[Math.floor(Math.random() * icons.length)]);
+}
+
+// Add notification cards with toast-style notifications
+const quotes = [
+{
+text: "Here's to the friends who became brothers. Happy birthday, man!",
+author: "From your best friend"
+},
+{
+text: "Bros before anything else. Always got your back!",
+author: "Your wingman"
+},
+{
+text: "To more adventures, crazy stories, and epic memories ahead.",
+author: "Partner in crime"
+},
+{
+text: "Best friends are the ones who make the good times better and the hard times easier.",
+author: "True friend"
+},
+{
+text: "Some people just get you without trying. That's real friendship.",
+author: "Lifelong buddy"
+}
+];
+
+const toastContainer = document.getElementById('toast-container');
+let isShowingNotification = false;
+let notificationQueue = [...quotes]; // Clone quotes array for queue
+let currentNotificationTimeout;
+
+function showNextNotification() {
+  if (notificationQueue.length === 0 || isShowingNotification) return;
+  
+  isShowingNotification = true;
+  const quote = notificationQueue.shift();
+  
+  // Create toast notification element
+  const toastNotification = document.createElement('div');
+  toastNotification.className = 'toast-notification';
+  toastNotification.innerHTML = `
+    <div class="toast-content">
+      <div class="toast-icon">
+        <i class="ri-message-3-line"></i>
+      </div>
+      <div class="toast-message">
+        <div class="toast-header">
+          <div class="toast-title">${quote.author}</div>
+          <div class="toast-time">Just now</div>
+        </div>
+        <div class="toast-body">${quote.text}</div>
+      </div>
+    </div>
+  `;
+  
+  // Add to container
+  toastContainer.appendChild(toastNotification);
+  
+  // Play notification sound
+  notificationSound.currentTime = 0;
+  notificationSound.play().catch(e => console.error('Error playing notification sound:', e.message));
+  
+  // Show with animation
+  setTimeout(() => {
+    toastNotification.classList.add('show');
+  }, 50);
+  
+  // Random duration between 5-7 seconds
+  const displayDuration = Math.floor(Math.random() * 2000) + 5000; // 5000-7000ms
+  
+  // Hide after duration
+  currentNotificationTimeout = setTimeout(() => {
+    toastNotification.classList.add('hide');
+    toastNotification.classList.remove('show');
+    
+    // Remove after animation completes and show next notification
+    setTimeout(() => {
+      toastNotification.remove();
+      isShowingNotification = false;
+      
+      // Small delay before showing next notification
+      setTimeout(() => {
+        showNextNotification();
+      }, 500);
+    }, 500);
+  }, displayDuration);
+}
+
+// Set up fireworks interval
+setInterval(createFirework, 15000);
+// Set up countdown timer
+updateCountdown();
+setInterval(updateCountdown, 1000);
+// Modal functionality
+const surpriseBtn = document.getElementById('surprise-btn');
+const surpriseModal = document.getElementById('surprise-modal');
+const closeModal = document.getElementById('close-modal');
+const wishForm = document.getElementById('wish-form');
+const wishInput = document.getElementById('wish-input');
+const wishSubmit = document.getElementById('wish-submit');
+const wishConfirmation = document.getElementById('wish-confirmation');
+
+surpriseBtn.addEventListener('click', function() {
+surpriseModal.classList.remove('hidden');
+// Light candles one by one
+setTimeout(() => document.getElementById('candle-1').classList.add('lit'), 500);
+setTimeout(() => document.getElementById('candle-2').classList.add('lit'), 1000);
+setTimeout(() => document.getElementById('candle-3').classList.add('lit'), 1500);
+setTimeout(() => document.getElementById('candle-4').classList.add('lit'), 2000);
+setTimeout(() => document.getElementById('candle-5').classList.add('lit'), 2500);
+// Show wish text
+setTimeout(() => {
+document.getElementById('wish-text').style.opacity = '1';
+// Create confetti burst
+for (let i = 0; i < 50; i++) {
+createConfettiBurst();
+}
+// Show wish form after short delay
+setTimeout(() => {
+  wishForm.classList.add('visible');
+}, 1000);
+}, 3000);
+});
+
+// Handle wish submission
+wishSubmit.addEventListener('click', function() {
+  if (wishInput.value.trim() !== '') {
+    // Hide form with animation
+    wishForm.style.opacity = '0';
+    wishForm.style.transform = 'translateY(-20px)';
+    
+    // Create sparkles around the page
+    for (let i = 0; i < 20; i++) {
+      createSparkle();
+    }
+    
+    // Show confirmation message
+    setTimeout(() => {
+      wishConfirmation.classList.add('visible');
+      
+      // Create shooting stars
+      for (let i = 0; i < 15; i++) {
+        setTimeout(() => {
+          createShootingStar();
+        }, i * 200);
+      }
+    }, 800);
+  }
+});
+
+// Create sparkle effect
+function createSparkle() {
+  const sparkle = document.createElement('div');
+  sparkle.className = 'sparkle';
+  
+  // Random position
+  sparkle.style.left = Math.random() * 100 + '%';
+  sparkle.style.top = Math.random() * 100 + '%';
+  
+  // Random size
+  const size = Math.random() * 6 + 3;
+  sparkle.style.width = size + 'px';
+  sparkle.style.height = size + 'px';
+  
+  // Random color
+  const colors = ['#FFD700', '#FFFFFF', '#FF5757', '#FFC107'];
+  sparkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+  
+  // Animation
+  sparkle.style.animation = `sparkle ${Math.random() * 1 + 0.5}s linear forwards`;
+  
+  surpriseModal.appendChild(sparkle);
+  
+  // Remove after animation
+  setTimeout(() => {
+    sparkle.remove();
+  }, 1500);
+}
+
+// Create shooting star effect
+function createShootingStar() {
+  const star = document.createElement('div');
+  star.className = 'wish-star';
+  
+  // Random position
+  star.style.left = (Math.random() * 80 + 20) + '%';
+  star.style.top = (Math.random() * 80) + '%';
+  
+  document.querySelector('.wish-stars').appendChild(star);
+  
+  // Remove after animation
+  setTimeout(() => {
+    star.remove();
+  }, 1000);
+}
+
+closeModal.addEventListener('click', function() {
+surpriseModal.classList.add('hidden');
+// Reset candles
+document.querySelectorAll('.candle').forEach(candle => {
+candle.classList.remove('lit');
+});
+document.getElementById('wish-text').style.opacity = '0';
+// Reset wish form and confirmation
+wishForm.classList.remove('visible');
+wishConfirmation.classList.remove('visible');
+if (wishInput.value) wishInput.value = '';
+});
+
+// Create balloon element
+function createBalloon() {
+const balloon = document.createElement('div');
+const colors = ['#FF5757', '#FFC107', '#4CAF50', '#2196F3', '#9C27B0'];
+const size = Math.random() * 30 + 30;
+balloon.className = 'balloon absolute rounded-full';
+balloon.style.width = `${size}px`;
+balloon.style.height = `${size}px`;
+balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+balloon.style.left = `${Math.random() * 100}%`;
+balloon.style.top = `${Math.random() * 100}%`;
+balloon.style.animationDuration = `${Math.random() * 5 + 5}s`;
+balloon.style.animationDelay = `${Math.random() * 5}s`;
+document.getElementById('floating-elements').appendChild(balloon);
+}
+// Create star element
+function createStar() {
+const star = document.createElement('div');
+const size = Math.random() * 4 + 2;
+star.className = 'star absolute rounded-full';
+star.style.width = `${size}px`;
+star.style.height = `${size}px`;
+star.style.left = `${Math.random() * 100}%`;
+star.style.top = `${Math.random() * 100}%`;
+star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+star.style.animationDelay = `${Math.random() * 3}s`;
+document.getElementById('floating-elements').appendChild(star);
+}
+// Create firework element
+function createFirework() {
+const firework = document.createElement('div');
+const size = Math.random() * 200 + 100;
+const colors = ['#FF5757', '#FFC107', '#4CAF50', '#2196F3', '#9C27B0'];
+firework.className = 'firework absolute rounded-full';
+firework.style.width = `${size}px`;
+firework.style.height = `${size}px`;
+firework.style.left = `${Math.random() * 80 + 10}%`;
+firework.style.top = `${Math.random() * 80 + 10}%`;
+firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+firework.style.opacity = '0.7';
+document.getElementById('floating-elements').appendChild(firework);
+// Remove after animation completes
+setTimeout(() => {
+firework.remove();
+}, 2000);
+}
+// Create confetti element
+function createConfetti() {
+const confetti = document.createElement('div');
+const colors = ['#FF5757', '#FFC107', '#4CAF50', '#2196F3', '#9C27B0'];
+const size = Math.random() * 10 + 5;
+confetti.className = 'confetti absolute';
+confetti.style.width = `${size}px`;
+confetti.style.height = `${size}px`;
+confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+confetti.style.left = `${Math.random() * 100}%`;
+confetti.style.top = `-${size}px`;
+confetti.style.animationDuration = `${Math.random() * 5 + 5}s`;
+confetti.style.animationDelay = `${Math.random() * 5}s`;
+// Random shapes
+if (Math.random() > 0.5) {
+confetti.style.borderRadius = '50%';
+} else {
+confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+}
+document.getElementById('floating-elements').appendChild(confetti);
+}
+// Create confetti burst for modal
+function createConfettiBurst() {
+const confetti = document.createElement('div');
+const colors = ['#FF5757', '#FFC107', '#4CAF50', '#2196F3', '#9C27B0'];
+const size = Math.random() * 10 + 5;
+confetti.className = 'absolute';
+confetti.style.width = `${size}px`;
+confetti.style.height = `${size}px`;
+confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+confetti.style.left = '50%';
+confetti.style.top = '40%';
+// Random shapes
+if (Math.random() > 0.5) {
+confetti.style.borderRadius = '50%';
+}
+// Animation
+const angle = Math.random() * Math.PI * 2;
+const velocity = Math.random() * 100 + 50;
+const tx = Math.cos(angle) * velocity;
+const ty = Math.sin(angle) * velocity;
+confetti.style.transform = 'translate(-50%, -50%)';
+confetti.style.transition = 'all 1s ease-out';
+document.getElementById('surprise-modal').appendChild(confetti);
+// Animate outward
+setTimeout(() => {
+confetti.style.transform = `translate(calc(-50% + ${tx}px), calc(-50% + ${ty}px)) rotate(${Math.random() * 360}deg)`;
+confetti.style.opacity = '0';
+}, 10);
+// Remove after animation
+setTimeout(() => {
+confetti.remove();
+}, 1000);
+}
+// Create floating icon
+function createFloatingIcon(iconType) {
+const icon = document.createElement('div');
+const size = Math.random() * 20 + 20;
+icon.className = `absolute w-${size} h-${size} flex items-center justify-center text-white opacity-30`;
+icon.style.left = `${Math.random() * 100}%`;
+icon.style.top = `${Math.random() * 100}%`;
+icon.style.animation = `float ${Math.random() * 10 + 10}s infinite ease-in-out`;
+icon.style.animationDelay = `${Math.random() * 5}s`;
+let iconClass = '';
+switch(iconType) {
+case 'cake':
+iconClass = 'ri-cake-2-line';
+break;
+case 'gift':
+iconClass = 'ri-gift-line';
+break;
+case 'heart':
+iconClass = 'ri-heart-line';
+break;
+case 'star':
+iconClass = 'ri-star-line';
+break;
+}
+icon.innerHTML = `<i class="${iconClass} ri-2x"></i>`;
+document.getElementById('floating-elements').appendChild(icon);
+}
+// Update countdown timer
+function updateCountdown() {
+// Set next birthday to April 24, 2026
+const nextBirthday = new Date('April 25, 2026 00:00:00').getTime();
+const now = new Date().getTime();
+const distance = nextBirthday - now;
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById('days').innerText = days;
+document.getElementById('hours').innerText = hours;
+document.getElementById('minutes').innerText = minutes;
+document.getElementById('seconds').innerText = seconds;
+// Add flip animation
+document.querySelectorAll('.flip-unit').forEach(unit => {
+unit.classList.remove('flip-unit');
+void unit.offsetWidth; // Trigger reflow
+unit.classList.add('flip-unit');
+});
+}
+});
+</script>
+</body>
+</html>
